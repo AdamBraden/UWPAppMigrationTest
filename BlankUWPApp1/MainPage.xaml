@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="BlankUWPApp1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BlankUWPApp1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Margin="100,20,0,0" FontSize="40">Hello World!</TextBlock>
+        <Button Content="List Nuget Packages" Height="159" Margin="100,100,0,0" VerticalAlignment="Top" Width="602" Click="Button_Click"/>
+        <TextBlock x:Name="dirList" HorizontalAlignment="Left" Height="760" Margin="750,100,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="736"/>
+        <FlipView MaxWidth="600" Height="400" Margin="100,50,800,0">
+            <Image Source="ms-appx:///Assets/SampleMedia/cliff.jpg" AutomationProperties.Name="Cliff"/>
+            <Image Source="ms-appx:///Assets/SampleMedia/grapes.jpg" AutomationProperties.Name="Grapes"/>
+            <Image Source="ms-appx:///Assets/SampleMedia/rainier.jpg" AutomationProperties.Name="Rainier"/>
+            <Image Source="ms-appx:///Assets/SampleMedia/sunset.jpg" AutomationProperties.Name="Sunset"/>
+            <Image Source="ms-appx:///Assets/SampleMedia/valley.jpg" AutomationProperties.Name="Valley"/>
+        </FlipView>
+    </Grid>
+</Page>
